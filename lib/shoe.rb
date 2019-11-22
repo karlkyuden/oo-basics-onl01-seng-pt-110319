@@ -8,7 +8,7 @@ class Shoe
   attr_accessor :brand, :color, :size, :material, :condition
   
   def cobble
-    condition("new")
+    @condition = condition("new")
     puts "Your shoe is as good as new!"
     @condition
   end
